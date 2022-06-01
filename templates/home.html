@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <div class="Form">
+            <Form method="POST" action="">
+                {{ form.hidden_tag() }}
+                {% for field in fields %}
+                {{ field.label }} {{ field }}
+                {% endfor %}
+                {{ form.submit }}
+            </Form>
+        </div>
+    </body>
+</html>

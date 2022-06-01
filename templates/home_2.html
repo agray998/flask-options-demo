@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <div class="Form">
+            <Form method="POST" action="">
+                {{ form.hidden_tag() }}
+                {{ form.demo.label }} {{ form.demo }}
+                {{ form.submit }}
+            </Form>
+        </div>
+        {% for selection in selections %}
+        {{ selection }}<br>
+        {% endfor %}
+        <a href="{{ add_url }}">Add All</a>
+    </body>
+</html>
